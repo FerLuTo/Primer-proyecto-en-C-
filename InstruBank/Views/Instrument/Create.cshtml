@@ -1,0 +1,36 @@
+﻿@model InstruBank.Models.Instrument
+
+
+@using (Html.BeginForm("Create", "Instrument", FormMethod.Post))
+{
+    <div>
+        @Html.LabelFor(model => model.Nombre)
+        @Html.EditorFor(model => model.Nombre)
+        @Html.ValidationMessageFor(model => model.Nombre)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Tipo)
+        @Html.EditorFor(model => model.Tipo)
+        @Html.ValidationMessageFor(model => model.Tipo)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Marca)
+        @Html.EditorFor(model => model.Marca)
+        @Html.ValidationMessageFor(model => model.Marca)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Precio)
+        @Html.EditorFor(model => model.Precio)
+        @Html.ValidationMessageFor(model => model.Precio)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Stock)
+        @Html.EditorFor(model => model.Stock)
+        @Html.ValidationMessageFor(model => model.Stock)
+    </div>
+    <p>
+        <input type="submit" value="Agregar" />
+    </p>
+}
+
+@Html.ActionLink("Volver a Página de Inicio", "Index", "Instrument")

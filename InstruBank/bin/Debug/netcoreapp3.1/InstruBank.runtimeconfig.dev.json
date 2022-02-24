@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\ferlu\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ferlu\\.nuget\\packages"
+    ]
+  }
+}

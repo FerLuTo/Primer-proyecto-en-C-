@@ -1,0 +1,18 @@
+﻿@model InstruBank.Models.Instrument
+
+@using (@Html.BeginForm("FindByName", "Instrument", FormMethod.Post))
+{
+    <div>
+        @Html.LabelFor(model => model.Nombre)
+        @Html.EditorFor(model => model.Nombre)
+        @Html.ValidationMessageFor(model => model.Nombre)
+    </div>
+    <p>
+        <input type="submit" name="Buscar" value="Buscar" />
+    </p>
+}
+
+@Html.ActionLink("Volver a Página de Inicio", "Index", "Instrument")
+
+
+

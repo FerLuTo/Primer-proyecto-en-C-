@@ -1,0 +1,29 @@
+﻿@model InstruBank.Models.Instrument
+
+
+@using (Html.BeginForm("Delete", "Instrument"))
+{
+    <table>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+            <th>@Html.DisplayNameFor(model => model.Tipo)</th>
+            <th>@Html.DisplayNameFor(model => model.Marca)</th>
+            <th>@Html.DisplayNameFor(model => model.Precio)</th>
+            <th>@Html.DisplayNameFor(model => model.Stock)</th>
+        </tr>
+        <tr>
+            <td>@Html.DisplayFor(model => model.Nombre)</td>
+            <td>@Html.DisplayFor(model => model.Tipo)</td>
+            <td>@Html.DisplayFor(model => model.Marca)</td>
+            <td>@Html.DisplayFor(model => model.Precio)</td>
+            <td>@Html.DisplayFor(model => model.Stock)</td>
+
+        </tr>
+
+    </table>
+    <p>
+        <input type="submit" value="Delete" />
+
+    </p>
+    @Html.ActionLink("Volver a Página de Inicio", "Index")
+}
